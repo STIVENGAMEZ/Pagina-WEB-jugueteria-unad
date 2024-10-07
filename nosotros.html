@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <!--Agregamos los links-->
+    <link rel="stylesheet" href="normalize.css">
+    <!--Agregamos la fuente que vamos a utilizar en el proyecto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <!--Estamos usando la notacion BEM-->
+            <div><img src="BANNER.png" alt=""></div>
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html" >Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Nosotros</h1>
+
+        <div class="nosotros">
+            <div class="nosotros__contenido"> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde omnis quam saepe illo aliquid ea mollitia nemo natus architecto ut ad dicta cumque, in quidem odit eius cum quas deserunt?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quidem eveniet iusto, minus voluptatibus aliquam nulla id esse praesentium? Cum optio, dolorem adipisci aspernatur expedita aperiam dolore quisquam. Animi, quis?</p>
+            </div>
+            <div><img src="nosotros.jpg" alt=""></div>
+        </div>
+
+        <!--Seccion de los iconos-->
+        <section class="contenedor comprar">
+            <h2 class="comprar__titulo">¿PorQué Comprar con Nosotros?</h2>
+            <div class="bloques">
+                <div class="bloque">
+                    <img class="bloque__imagen" src="icono_1.png" alt="icono1">
+                    <h2 class="bloque__titulo">Mejor Precio</h2>
+                    <p class="bloque__texto"> Te ofrecemos los mejores precios del mercado</p>
+                </div> <!--Cierre del bloque-->
+
+                <div class="bloque">
+                    <img class="bloque__imagen" src="icono_2.png" alt="icono2">
+                    <h2 class="bloque__titulo">Para Dev</h2>
+                    <p class="bloque__texto"> Tenemos los mejores productos para desarrolladores</p>
+                </div> <!--Cierre del bloque-->
+
+                <div class="bloque">
+                    <img class="bloque__imagen" src="icono_3.png" alt="icono3">
+                    <h2 class="bloque__titulo">Envio Gratis</h2>
+                    <p class="bloque__texto"> Te ofrecemos envio gratis de nuetsros productos a todo el pais</p>
+                </div> <!--Cierre del bloque-->
+
+                <div class="bloque">
+                    <img class="bloque__imagen" src="icono_4.png" alt="icono4">
+                    <h2 class="bloque__titulo">Mejor Calidad</h2>
+                    <p class="bloque__texto"> Nuestros productos cuentan con la mejor calidad del mercado </p>
+                </div>  <!--Cierre delo bloque-->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Todos los derechos reservados 2024</p>
+    </footer>
+</body>
+</html>

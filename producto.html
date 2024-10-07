@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <!--Agregamos los links-->
+    <link rel="stylesheet" href="normalize.css">
+    <!--Agregamos la fuente que vamos a utilizar en el proyecto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <!--Estamos usando la notacion BEM-->
+            <div><img src="BANNER.png" alt=""></div>
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html" >Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Producto</h1>
+
+        <div class="remera">
+            <div><img src="muñecas 2.webp" alt=""></div>
+
+            <div class="producto__info"> 
+                <p class="producto__texto">Características:
+Incluye Casa OMG Fashion + 85 sorpresas.
+Los colores y las decoraciones pueden variar.
+Hecho en China.
+Recomendado para niñas mayores de 3 años.</p>
+
+                <form class="formulario" action="">
+                    <!--Para hacer campos que se pueden seleccionar utilizamos el select-->
+                    
+                
+                    <!--Para hacer el campo de la cantidad
+                    type nos deja solo ingresar ese tipo
+                    min nos dice cual sera el número minimo que se puede seleccionar (no negativos en este caso)
+                    step es de cuanto en cuanto va-->
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" step="1">
+
+                    <!--Al boton como esta dentro de un formulari le podemos poner input-->
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Todos los derechos reservados 2022 </p>
+    </footer>
+</body>
+</html>
